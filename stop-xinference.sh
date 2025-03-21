@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Port where xinference-local is running
-PORT=9997
+PORT=${PORT:-9997}
 
 # Find the PID associated with the given port
 PID=$(lsof -t -i :$PORT)
@@ -14,7 +14,7 @@ else
   # Kill the process
   echo "Stopping process (PID: $PID) running on port $PORT..."
   kill $PID
-  
+
   # Check if the process was successfully terminated
   if [ $? -eq 0 ]; then
     echo "Successfully stopped the process running on port $PORT."
