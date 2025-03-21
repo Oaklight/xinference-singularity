@@ -1,0 +1,47 @@
+.xinference/
+├── cache
+│   ├── bge-m3
+│   ├── bge-reranker-v2-m3
+│   ├── bge-reranker-v2-minicpm-layerwise
+│   ├── distill-whisper-large-v3 -> /root/.xinference/custom_models/models--distil-whisper--distil-large-v3
+│   ├── jina-clip-v2
+│   ├── jina-embeddings-v3
+│   ├── jina-readerlm-v2-ggufv2-1_78b -> /root/.xinference/custom_models
+│   ├── jina-readerlm-v2-pytorch-1_78b -> /root/.xinference/custom_models/models--jinaai-jina-readerlm-v2
+│   ├── jina-reranker-v2
+│   ├── m3e-small
+│   ├── minicpm3-4b-gptq-4b
+│   ├── minicpm3-4b-pytorch-4b
+│   ├── MiniCPM-V-2_6-pytorch-8b
+│   ├── SenseVoiceSmall
+│   ├── whisper-large-v3-turbo
+│   ├── yi-coder-chat-pytorch-1_5b
+│   └── yi-coder-pytorch-1_5b
+├── custom_models
+│   ├── models--distil-whisper--distil-large-v3
+│   └── models--jinaai-jina-readerlm-v2
+├── logs
+│   ├── local_1729372213138
+│   ├── local_1731566042391
+│   ├── local_1731603350839
+│   ├── local_1731604649160
+│   ├── local_1732252246105
+│   ├── local_1732253994620
+│   ├── local_1732254165099
+│   ├── local_1732254747922
+│   ├── local_1732255328248
+│   ├── local_1732255757120
+│   ├── local_1734075425801
+│   ├── local_1735047043959
+│   ├── local_1736673721272
+│   ├── local_1736676500637
+│   ├── local_1736677116350
+│   ├── local_1739301731421
+│   ├── local_1740417420376
+│   └── local_1742579495901
+└── model
+    ├── audio
+    ├── embedding
+    └── llm
+
+41 directories, 3 files
