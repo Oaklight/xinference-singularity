@@ -4,3 +4,8 @@ DOCKER_IMAGE=xprobe/xinference:${LATEST_VERSION}
 
 echo "Pulling image: ${DOCKER_IMAGE}..."
 singularity pull docker://${DOCKER_IMAGE}
+
+# Ensure LATEST_VERSION file exists with current version
+if [ ! -f LATEST_VERSION ] || [ -z "$(cat LATEST_VERSION)" ]; then
+  echo "${LATEST_VERSION}" >LATEST_VERSION
+fi

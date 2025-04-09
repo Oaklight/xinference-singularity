@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Check for version in this order:
+# 1. LATEST_VERSION environment variable
+# 2. LATEST_VERSION file (if exists)
+# 3. Default version v1.2.2
+if [ -z "${LATEST_VERSION}" ] && [ -f LATEST_VERSION ]; then
+  LATEST_VERSION=$(cat LATEST_VERSION)
+fi
 LATEST_VERSION=${LATEST_VERSION:-v1.2.2}
 
 BASE_DIR=${BASE_DIR:-${HOME}/dockervol/xinference/}
