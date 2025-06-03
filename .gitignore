@@ -1,0 +1,4 @@
+*.sif
+LATEST_VERSION
+.xinference/
+*.log
